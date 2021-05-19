@@ -1,0 +1,17 @@
+- hosts: windows
+- name: Replace SNMP communities and managers
+  community.windows.win_snmp:
+    community_strings:
+    - public
+    - {{ COMMUNAUTY_SNMP }}
+    permitted_managers:
+    - 192.168.1.2
+    - {{ IP_SNMP }}
+    action: set
+
+- name: Replace SNMP communities and clear managers
+  community.windows.win_snmp:
+    community_strings:
+    - public
+    permitted_managers: []
+    action: set
