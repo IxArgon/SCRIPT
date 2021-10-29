@@ -1,0 +1,9 @@
+zabbix_agent_interfaces:
+  - type: 1
+    main: 1
+    useip: "{{ zabbix_useuip }}"
+    ip: "{{ zabbix_agent_ip }}"
+    dns: "{{ ansible_fqdn }}"
+    port: "{{ zabbix_agent_listenport }}"
+    
+::https://github.com/dj-wasabi/ansible-zabbix-agent

@@ -1,0 +1,17 @@
+
+PREREQUIS
+
+MAJ os
+apt update
+apt upgrade
+apt install
+
+Installer PIP
+apt install python-pip
+apt install python3-pip
+
+Installer Ansible
+python -m pip install --user ansible
+
+install global ansible
+sudo python -m pip install ansible
